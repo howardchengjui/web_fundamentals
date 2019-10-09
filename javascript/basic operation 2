@@ -1,0 +1,124 @@
+//q1//
+function positivetobig(arr){
+    for(i=0;i<arr.length;i++){
+    if(arr[i]>0){
+        arr[i]='big';
+    }
+}
+return arr;
+}
+console.log(positivetobig([0,-1,2,-3,4]));
+
+
+//q2//
+function printlowreturnhigh(arr){
+    var min=arr[0];
+    var max=arr[0];
+    for(i=0;i<arr.length;i++){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+        
+        if(arr[i]>max){
+            max=arr[i];
+    }
+  }
+    console.log(min)
+    return max;
+}
+printlowreturnhigh([4,1,2,3,4]);
+
+//q3//
+function printsecondtolastreturnfirstodd(arr){
+    console.log(arr[arr.length-2]);
+    for(i=0;i<arr.length;i++){
+        if(arr[i]%2==1){
+        return arr[i];
+        }
+    }
+}
+printsecondtolastreturnfirstodd([0,1,2,3,4]);
+
+//q4//
+function doublevision(arr){
+    var newarr=[];
+    for(i=0;i<arr.length;i++){
+        newarr.push(arr[i]*2)
+    }
+return newarr;
+}
+console.log(doublevision([0,1,2,3,4]));
+
+//q5//
+function countpositives(arr){
+    var counter=0;
+    for(i=0;i<arr.length;i++){
+        if(arr[i]>0){
+            counter=counter+1;
+        }
+        arr.pop(arr.length-1)
+        arr.push(counter);
+    }
+  return arr;
+}
+console.log(countpositives([0,-1,2,-3,4]));
+
+//q6//
+Evens and Odds - Create a function that accepts an array.
+Every time that array has three odd values in a row, print "That's odd!". 
+Every time the array has three evens in a row, print "Even more so!".
+
+function evenandodds(arr){
+    for(i=0;i<arr.length-3;i++){
+    if(arr[i]%2!=0 && arr[i+1]%2!=0 && arr[i+2]%2!=0){
+        console.log("That's odd!")
+        }
+    else if (arr[i]%2==0 && arr[i+1]%2==0 && arr[i+2]%2==0){
+        console.log("Even more so!")
+        }
+   }
+ }
+ evenandodds ([0,1,2,2,3,3,3,6,7,6,6,6,0])
+
+ //q7//
+ function incrementseconds(arr){
+    for(i=0;i<arr.length;i++){
+        if(i%2!=0){
+           arr[i]=arr[i]+1;
+        }
+    }
+ return arr;
+}
+ console.log(incrementseconds([0,1,2,3,4,5]));
+
+ //q8//
+ function previouslength(arr){ 
+    for(var i=arr.length-1;i>0;i--){
+        arr[i]=arr[i-1].length;
+ }
+return arr;
+}
+console.log(previouslength(["hello","Howard","world","hi","you"]));
+
+//q9//
+function addseven(arr){
+    var newarr=[];
+for(i=0;i<arr.length;i++){
+    newarr.push(arr[i]+7);
+    }
+return newarr;
+}
+console.log(addseven([0,1,2,3,4]));
+
+//q10//
+function reversearray(arr){
+    for(i=0;i<arr.length/2;i++){
+        var temp=arr[i];
+        arr[i]=arr[arr.length-i-1];
+        arr[arr.length-i-1]=temp;
+        console.log(arr);
+}
+return arr;
+}
+console.log(reversearray([0,1,2,3,4,5]));
+

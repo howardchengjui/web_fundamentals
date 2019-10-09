@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" type="text/css" href="file:///Users/howardchen/Desktop/Coding%20dojo/ajax/pokemon.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                for(i=0;i<151;i++){
+                $.get("https://pokeapi.co/api/v2/pokemon/"+ i+"/" ,function(res){
+                    var img= res.sprites.front_default;
+                    // console.log(img);
+                    $(".pokemon").append("<img src=" + img + ">");
+                },"json");
+                }
+            });
+        </script>
+    </header>
+    <body>
+        <div class="pokemon">
+            <!-- <img class="pokemonimg" alt=""> -->
+
+        </div>
+    </body>
+
+
+
+
+
+
+
+
+    </html>

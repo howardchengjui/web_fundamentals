@@ -1,0 +1,221 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Demo</title>
+        <link rel="stylesheet" type="text/css" href="file:///Users/howardchen/Desktop/Coding%20dojo/jquery/jQuery%20Demo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+        <script>$(document).ready(function(){
+            console.log('document is ready!')
+            
+            $('#click button').click(function(){
+                console.log('you clicked');
+                $('#click p').slideToggle("slow");});
+
+            $('#addclass button').click(function(){
+                console.log('you added class');
+                $('#addclass p').addClass("bluebigpurple");});
+
+
+
+            $('#after button').after();
+                console.log('you hit after');
+            
+            $('#text button').text();
+                console.log('you inserted text');
+
+            $('button').click(function(){
+            alert("You have clicked a button!");
+                });
+
+            });
+            
+
+        </script>   
+    </head>
+    <body>
+        <div id="click">
+            <button>click</button>
+            <p>hi!</p>
+            <p>hi!</p>
+            <p>hi!</p>
+            <p>hi!</p>
+        </div> 
+        
+        <div id="addclass">
+            <button>add Class</button>
+            <p>hey!</p>
+            <p>hey!</p>
+            <p>hey!</p>
+            <p>hey!</p>
+        </div> 
+
+        <div id="after">
+            <button>after</button>
+        </div> 
+
+        <div id="text">
+            <button>text</button>
+        </div> 
+    </body>
+</html> -->
+
+<!DOCTYPE
+html>
+
+<html
+lang="en">
+
+
+
+<head>
+
+<title>jQuery Demo</title>
+
+<link
+rel="stylesheet"
+type="text/css"
+href="jQuery Demo.css">
+
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+<script>$(document).ready(function
+ () {
+
+console.log('document is ready!')
+
+
+
+$('#click button').click(function () {
+
+console.log('you clicked');
+
+$('#click p').toggle();
+
+});
+
+
+
+$('#addclass button').click(function () {
+
+console.log('you added class');
+
+$('#addclass p').addClass("bluebigpurple");
+
+});
+
+
+
+
+
+$('#after button').click(function () {
+
+// console.log('you hit after');
+
+$('#afterafter').after('<p>How are you</p>');
+
+
+});
+
+
+
+
+
+$('#text button').click(function () {
+
+console.log('you added Text');
+
+$('#text p').html('Hello World');
+
+});
+
+
+
+
+$('button').click(function () {
+
+alert("You have clicked a button");
+
+});
+
+
+
+});
+
+
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<div
+id="click">
+
+<button>click</button>
+
+<p>hi!</p>
+
+<p>hi!</p>
+
+<p>hi!</p>
+
+<p>hi!</p>
+
+</div>
+
+
+
+<div
+id="addclass">
+
+<button>add Class</button>
+
+<p>hey!</p>
+
+<p>hey!</p>
+
+<p>hey!</p>
+
+<p>hey!</p>
+
+</div>
+
+
+
+<div
+id="after">
+
+<button>after</button>
+
+<p id="afterafter"></p>
+
+</div>
+
+
+
+<div
+id="text">
+
+<button>Text</button>
+
+<p>This is my paragraph!</p>
+
+
+
+</div>
+
+</body>
+
+
+
+</html>
+

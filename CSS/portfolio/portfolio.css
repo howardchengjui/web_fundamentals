@@ -1,0 +1,142 @@
+* {  
+    margin: 0px ;
+    padding:0px;
+}
+#container{
+    width: 1000px;
+    min-height:600px; 
+    background-color: #564149;
+    padding:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    background-color:whitesmoke;
+    width: 1030px;
+    min-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-header{
+    display:inline-block;  
+    margin-left:20px;
+    padding:10px;
+
+}
+.right-header{
+    display:inline-block;
+    margin-left:500px;
+    
+}
+
+#image{
+    width:400px;
+    min-height: 200px;
+    display:inline-block;
+    padding:10px;
+    background-color: lightgrey;
+    margin: 15px;
+}
+
+#about{
+    width: 510px;
+    height: 287px;
+    display:inline-block;
+    background-color: thistle;
+    margin:15px;
+    vertical-align:top;
+}
+#lamode,#familycontacts,#fiveEleven{
+    width: 300px;
+    min-height: 200px;
+    display:inline-block;
+    background-color: lightgrey;
+    margin:15px 15px 0px 15px;
+}
+#container h2{
+    color:white;
+    background-color:grey;
+    display:block;
+    padding:5px;
+}
+#container p{
+    color:black;
+    background-color: thistle;
+    text-align: center;
+}
+
+.middle {
+    height:auto;
+    width:100%;
+}
+.technology{
+    width: 300px;
+    min-height: 200px;
+    display:inline-block;
+    background-color: thistle;
+    margin:0px 15px 15px 15px;
+    vertical-align: top;
+    
+
+}
+.picture{
+    width:40px;
+    height:auto;
+    margin:8px;
+}
+
+.button1{
+    background-color: darkgreen;
+    margin-left:120px;
+    color:white;
+    border-radius:10px;
+    border-color: black;
+    padding:8px;   
+}
+
+.button2{
+    background-color: darkgreen;
+    margin-left:100px;
+    color:white;
+    border-radius:10px;
+    border-color: black;
+    padding:8px;   
+}
+
+.button3{
+    background-color: darkgreen;
+    margin-left:110px;
+    color:white;
+    border-radius:10px;
+    border-color: black;
+    padding:8px;   
+}
+#footnote{
+    width:1030px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.upperfootnote{
+    background-color:whitesmoke;
+    width: 1020px;
+    min-height: 20px;
+    color:black;
+    text-align: center;
+    padding:5px;
+}
+.lowerfootnote{
+    background-color:whitesmoke;
+    width: 1020px;
+    min-height: 20px;
+    color:black;
+    text-align: center;
+    padding:5px;
+    font-style:italic;
+}
+.icon{
+    width:15px;
+    height:auto;
+    vertical-align: top;
+}
+.link{
+    text-decoration:underline;
+    display:inline;
+    
+}

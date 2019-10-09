@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>disappearing ninja</title>
+        <link rel="stylesheet" type="text/css" href="file:///Users/howardchen/Desktop/Coding%20dojo/jquery/jQuery%20Demo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+        <script>$(document).ready(function(){
+                console.log('document is ready!')
+                $('img').click(function(){
+                    console.log("you hid one ninja")
+                    $(this).hide();
+                });
+
+                $("button").click(function(){
+                    console.log("you restored the ninjas")
+                    $("img").show();
+                });
+
+            });
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon">
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon" > 
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon" > 
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon" > 
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon" > 
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon" > 
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon" > 
+            <img src="file:///Users/howardchen/Downloads/ninja.png" alt="ninja icon" > 
+        </div>
+
+        <div id="button">
+            <button>restore</button>
+        </div>
+    </body>
+</html>

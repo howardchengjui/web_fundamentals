@@ -1,0 +1,39 @@
+*{  
+    margin:auto;
+    /* outline: dotted red 1px; */
+}
+
+/* .display-4 h1, .icon img #searchbox .jumbotron button{
+    display:inline-block;
+} */
+.jumbotron{
+   
+}
+
+.search
+{
+    display: block;
+    width:auto;
+}
+
+.dogpic{
+    vertical-align: right;
+}
+
+.dogpic img{
+    max-height:500px;
+}
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+.dogpic img{
+    margin-top:200px;
+}

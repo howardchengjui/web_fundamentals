@@ -1,0 +1,48 @@
+* {
+    margin:0px;
+    padding:10px;
+    /* outline: solid grey 1px;  */
+}
+
+#click{
+    width:970px;
+    min-height:220px;
+    background-color:goldenrod;
+}
+
+#addclass{
+    width:970px;
+    min-height:220px;
+    background-color: coral;
+    
+}
+
+#after{
+    width:970px;
+    min-height:220px;
+    background-color:silver;
+    
+}
+
+#text{
+    width:970px;
+    min-height:220px;
+    background-color: darkcyan;
+    
+}
+
+.bluebigpurple{
+    color:blue;
+    font-style: italic;
+    font-size: 50px;
+    background-color: blueviolet;
+}
+
+#click p,#addclass p,#after p,#text p{
+    text-align: center;
+}
+
+#click button,#addclass button,#after button,#text button{
+    border-radius:10px;
+    font-size:20px;
+}

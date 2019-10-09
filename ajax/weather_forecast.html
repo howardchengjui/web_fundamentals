@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" type="text/css" href="file:///Users/howardchen/Desktop/Coding%20dojo/ajax/weather_forecast.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // $('form').submit(function(){
+                    $("button").click(function(){
+                        var cityname=$("input").val();
+                        $.get("http://api.openweathermap.org/data/2.5/weather?q="+cityname+"&&appid=4ce826ad8b8eb3ed2addd818cbde1100", function(res) {
+                        console.log(res);
+                        var city_name=res.name;
+                        var temp=res.main.temp;
+                        $("#city").html(city_name);
+                        $("#temperature").html("<h2>Temperature:<h2>"+temp);
+                        },'json');
+                
+            return false;
+                 }) });
+        </script>
+    </header>
+    <body>
+        <h1>My weather forecast app</h1>
+        <div id="searchbox">
+            <input type="text" id="searchbox" name="searchbox">
+            <button>Search Weather</button>
+        </div>  
+
+        <h1 id="city">
+        </h1>
+            
+        <div id="temperature">
+           
+        </div>
+
+    </body>
+</html>
+
